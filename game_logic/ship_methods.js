@@ -21,4 +21,4 @@ function damageShip (ship, coordinates) {
 }
 
 module.exports.checkForShip = checkForShip;
-module.exports.damageShip = damageShip;
+module.exports.damageShip = damageShip; 
