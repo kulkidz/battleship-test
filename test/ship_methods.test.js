@@ -1,7 +1,7 @@
 /* global describe it */
 
 const { expect } = require("chai");
-const { checkForShip } = require("../game_logic/ship_methods");
+const { checkForShip, damageShip } = require("../game_logic/ship_methods");
 
 describe("checkForShip", () => {
   it('should correctly report no ship at a given players coordinate', function () {
