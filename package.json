@@ -1,0 +1,13 @@
+{
+  "name": "battleship-testing",
+  "version": "0.0.1",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha ./test/**/*.test.js",
+    "test-watch": "mocha --watch ./test/**/*.test.js"
+  },
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.1.0"
+  }
+}
