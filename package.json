@@ -3,11 +3,12 @@
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
-    "test": "mocha ./test/**/*.test.js",
+    "test": "mocha test ./test/**/*.test.js --reporter mocha-junit-reporter --reporter-options mochaFile=./store_test_results.xml",
     "test-watch": "mocha --watch ./test/**/*.test.js"
   },
   "dependencies": {
     "chai": "^4.1.2",
-    "mocha": "^4.1.0"
+    "mocha": "^4.1.0",
+    "mocha-junit-reporter": "^1.17.0"
   }
 }
