@@ -41,7 +41,7 @@ jobs:
     
     general:
       artifacts:
-        - "dist"
+        - dist
 
 
 
