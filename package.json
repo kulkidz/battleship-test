@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
-    "test": "mocha test ./test/**/*.test.js --reporter mocha-junit-reporter --reporter-options mochaFile=./store_test_results/test.xml",
+    "test": "mocha test ./test/**/*.test.js --reporter mocha-junit-reporter --reporter-options mochaFile=./test_output/report.xml",
     "test-watch": "mocha --watch ./test/**/*.test.js"
   },
   "dependencies": {
