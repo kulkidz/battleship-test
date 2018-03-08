@@ -1,3 +1,5 @@
 /node_modules
 yarn.lock
 store_test_results.xml
+/dist
+/test_output

@@ -35,8 +35,13 @@ jobs:
         
       # run tests!
       - run: yarn test
+      - build: yarn run build
       - store_test_results:
           path: test_output
+    
+    general:
+      artifacts:
+        - "dist"
 
 
 
