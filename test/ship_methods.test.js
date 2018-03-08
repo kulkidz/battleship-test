@@ -45,7 +45,7 @@ describe("checkForShip", () => {
    });
 
     it('should handle checking multiple ships', function () {
-            
+
         player = {
             ships: [
                 {
@@ -59,32 +59,29 @@ describe("checkForShip", () => {
                 }
             ]
         };
-        
+
         expect(checkForShip(player, [0, 1])).to.be.true;
-        expect(checkForShip(player, [0, 0])).to.be.true;	
-        expect(checkForShip(player, [1, 0])).to.be.true;	
+        expect(checkForShip(player, [0, 0])).to.be.true;
+        expect(checkForShip(player, [1, 0])).to.be.true;
         expect(checkForShip(player, [1, 1])).to.be.true;
-        expect(checkForShip(player, [2, 3])).to.be.true;	
+        expect(checkForShip(player, [2, 3])).to.be.true;
         expect(checkForShip(player, [9, 9])).to.be.false;
     });
 });
 
 describe('damageShip', function () {
     var damageShip = require('../game_logic/ship_methods').damageShip;
-    
+
     it('should register damage on a given ship at a given location', function () {
         var ship = {
             locations: [[0, 0]],
             damage: []
         };
-        
+
         damageShip(ship, [0, 0]);
-        
+
         expect(ship.damage).to.not.be.empty;
         expect(ship.damage[0]).to.deep.equal([0, 0]);
     });
 
-    it("Hello Slack!", () => {
-      expect(false).to.equal(true);
-    });
 });
