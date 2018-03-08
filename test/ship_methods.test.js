@@ -83,4 +83,8 @@ describe('damageShip', function () {
         expect(ship.damage).to.not.be.empty;
         expect(ship.damage[0]).to.deep.equal([0, 0]);
     });
+
+    it("Hello Slack!", () => {
+      expect(false).to.equal(true);
+    });
 });
