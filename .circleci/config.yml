@@ -36,7 +36,7 @@ jobs:
       # run tests!
       - run: yarn test
       - store_test_results:
-          path: test_output/report.xml
+          path: test_output
 
 
 
